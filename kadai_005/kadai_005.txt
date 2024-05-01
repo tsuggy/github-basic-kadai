@@ -1,0 +1,10 @@
+mkdir git_challenge
+cd ./git_challenge
+echo "Hello, world¥!" >> hello_world.txt
+cd ../
+git add ./git_challenge/hello_world.txt
+git commit -m "hello_world.txtを追加"
+echo "こんにちは、世界！" >> ./git_challenge/hello_world.txt
+git add ./git_challenge/hello_world.txt
+git commit -m "日本語訳を追記"
+git log --oneline
